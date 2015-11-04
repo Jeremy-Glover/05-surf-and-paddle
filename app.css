@@ -31,11 +31,9 @@ body {
 .top-nav__item {
   display: inline-block;
 }
-
-.top-nav__items {
-  flexgrow: 1;
+.nav-logo {
+  color: rgb(10, 42, 139);
 }
-
 header {
   text-align: center;
   overflow: hidden;
@@ -47,11 +45,11 @@ header {
 
   color: white;
 }
-.main-head, .sub-head {
+.top-nav__headline, .top-nav__subhead {
   align-items: center;
   margins: 0;
 }
-.sub-head {
+.top-nav__subhead {
   position: relative;
   bottom: 60px;
   color: black;
@@ -81,5 +79,38 @@ article {
 
 aside {
   flex: 1;
-  width:
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-guide {
+  display: flex;
+  width: 1040px;
+  align-items: center;
+}
+
+.image-guide__post {
+  display: flex;
+  flex-grow: 1;
+  width: 260px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.bottom-nav {
+  justify-content: space-between;
+  width: 1040px;
+
+  margin: auto;
+  padding: 0;
+  background-color: rgb(10, 42, 139);
+}
+
+.bottom-nav__right__items {
+  display: inline-block;
+  float: right;
 }

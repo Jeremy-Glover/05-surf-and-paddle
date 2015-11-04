@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    <header class="container">
+    <main class="container">
+      <header>
       <nav class="top-nav">
         <ul>
           <li class ="nav-logo">SURF & PADDLE CO. BLOG</li>
@@ -20,14 +21,14 @@
           <li class="top-nav__item"><a href="#">SEARCH</a></li>
         </ul>
       </nav>
-      <h1 class="main-head">SURF & PADDLE CO.</h1>
-      <p class="sub-head">An Ironyard Academy Project Est. Fall 2013</p>
+      <h1 class="top-nav__headline">SURF & PADDLE CO.</h1>
+      <p class="top-nav__subhead">An Ironyard Academy Project Est. Fall 2013</p>
     </header>
     <section>
-      <article class="left-column">
-        <h2 class="story-head">A Fantastic Engaging <br>Headline Goes Here</h2>
-        <div class="story-by">
-          <img class="author" src="" alt="">
+      <article class="main">
+        <h2 class="main__head">A Fantastic Engaging <br>Headline Goes Here</h2>
+        <div class="main__description">
+          <img class="main__author" src="" alt="">
           <p>Anne Marie  <span>on Monday Oct.7th 9:22pm</span></p>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -35,43 +36,55 @@
           <h6 class="insert">WOAH, THAT'S RADICAL!</h6>
           In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <nav class="middle-nav">
-          <ul>
-            <li><a href="#"></a>Read Comments</li>
-            <li><a href="#"></a>Read Later</li>
-            <li>Share This Post</li>
+          <ul class="middle-nav">
+            <li class="middle-nav__item1"><a href="#">Read Comments</a></li>
+            <li class="middle-nav__item1"><a href="#">Read Later</a></li>
+            <li class="middle-nav__item2"><a href="#">Share This Post</a></li>
           </ul>
-        </nav>
       </article>
-
       <aside class="sidebar">
-        <img src="" alt="" class="author">
+        <img src="" alt="" class="sidebar__author">
         <p>ANNE MARIE <br><span>Twitter  Facebook  Instagram</span></p>
-        <img src="" alt="">
-        <p></p>
-        <h6>Sidebar Section Heading</h6>
-        <p><span></span></p>
+        <img src="" alt="" class="sidebar__img">
+        <p class="sidebar__info__link">About This Ad</p>
+        <h4>Sidebar Section Heading</h4>
+        <p class="sidebar__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </aside>
     </section>
-    <footer>
+    <footer class=bottom-container>
       <h2>MOST POPULAR POSTS</h2>
-      <div class="image-post">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-
-      <nav class="bottom-nav">
-        <p class="logo">The Ironyard Copyright 2013. All Rights Reserved</p>
-        <ul>
-          <li>Nav Item 1</li>
-          <li>Nav Item 2</li>
-          <li>Nav Item 3</li>
-          <li>Nav Item 4</li>
-        </ul>
-          </nav>
-        </p>
+       <div class="image-guide">
+        <div class="image-guide__item">
+          <img src="http://lorempixel.com/300/300/" alt="post">
+          <p class="image-guide__item__text">Another Cool Post</p>
+        </div>
+        <div class="image-guide__item">
+          <img src="http://lorempixel.com/300/300/" alt="post">
+          <p class="image-guide__item__text">Post Title</p>
+        </div>
+        <div class="image-guide__item">
+          <img src="http://lorempixel.com/300/300/" alt="post">
+          <p class="image-guide__item__text">Here's Another Longer Post Title</p>
+        </div>
+        <div class="image-guide__postitem">
+          <img src="http://lorempixel.com/300/300/" alt="post">
+          <p class="image-guide__item__text">Oh Cool A Post!</p>
+        </div>
       </div>
+      <nav class="bottom-nav">
+        <div class="bottom-nav__left">
+          <p class="logo">The Ironyard Copyright 2013. All Rights Reserved</p>
+        </div>
+        <div>
+        <ul class="bottom-nav__right">
+          <li class="bottom-nav__right__items">Nav Item 1</li>
+          <li class="bottom-nav__right__items">Nav Item 2</li>
+          <li class="bottom-nav__right__items">Nav Item 3</li>
+          <li class="bottom-nav__right__items">Nav Item 4</li>
+        </ul>
+        </div>
+      </nav>
     </footer>
+  </main>
   </body>
 </html>
