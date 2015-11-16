@@ -13,63 +13,96 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   margin: auto;
   max-width: 1040px;
   min-height: 100vh;
+  font-family: "Lucida Sans Unicode", sans-serif;
 }
 
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1040px;
-
-  margin: auto;
-  padding: 0;
-  align-items: center;
-}
-.top-nav__item {
-  display: inline-block;
-}
-.nav-logo {
-  color: rgb(10, 42, 139);
-}
 header {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   overflow: hidden;
-  height: 25rem;
-
+  height: 20rem;
   background: url("http://www.boem.gov/uploadedImages/BOEM/Environmental_Stewardship/NOP/CliffBEACH.jpg?n=1249")
     no-repeat center center;
   background-size: cover;
-
+  background-color: rgb(17, 89, 196);
+  background-blend-mode: overlay;
+  margin: 0 10px 30px;
   color: white;
 }
-.top-nav__headline, .top-nav__subhead {
-  align-items: center;
-  margins: 0;
-}
-.top-nav__subhead {
-  position: relative;
-  bottom: 60px;
-  color: black;
-  font-size: 12px;
+
+.nav-top {
+  display: flex;
+  align-items: baseline;
+  max-width: 100%;
+  padding: 5px 80px;
+  color: rgb(10, 42, 139);
 }
 
-h1 {
+.nav-logo {
+  display: flex;
+  flex: 1;
+  font-size: .7rem;
+  font-weight: bold;
+
+}
+
+.fa-sun-o {
+  padding: 0 5px;
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+.fa-search {
+  padding: 0 5px;
+}
+
+.nav__item {
+  display: flex;
+}
+
+.nav__item a {
+  padding: 10px;
+}
+
+.nav-top__head, .nav-top__subhead {
+  align-items: center;
+}
+
+.nav-top__head {
   font-size: 75px;
+  line-height: 1rem;
 }
-h2 {
-  color: rgb(10, 42, 139);
-  font-size: 50px;
+
+.nav-top__subhead {
+  color: black;
+  font-size: .8rem;
+  font-weight: bold;
+  line-height: .5rem;
+  margin-top: 0;
 }
+
+/*Main content of the page*/
 
 .content {
   display: flex;
   max-width: 100%;
   margin: auto;
+}
+
+.main-head, .bottom-head {
+  color: rgb(10, 42, 139);
+  font-size: 50px;
 }
 
 .main {
@@ -87,14 +120,11 @@ h2 {
 
 .button {
   display: inline-block;
-  margin: 1 rem;
+  margin: 1rem;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
+.bottom-head {
+  align-self: center;
 }
 
 .image-guide__pics {
@@ -104,42 +134,48 @@ footer {
 
 .image-guide {
   display: flex;
-
   width: 100%;
+}
 
-  overflow: hidden;
+.image-guide__item {
+  position: relative;
+}
+
+.image-guide__item__text {
+  position: absolute;
+  bottom: 1%;
+  font-size: 1.5rem;
+  color: white;
 
 }
 
-.image-guide__post {
+.bottom-nav {
   display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(10, 42, 139);
+  font-size: .5rem;
+  color: white;
+}
 
+.bottom-nav__left {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  padding-left: 80px;
+}
 
-  height: 100px;
-  overflow: hidden;
-  margin: auto;
+.bottom-nav__right {
+  display: flex;
+  flex: 1;
+}
+
+.bottom-nav__right__items {
+  padding: 3px;
 }
 
 .bottom-logo {
   width: 2rem;
   height: 2rem;
-}
-
-.bottom-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 100%;
-  margin: auto;
-  padding: 0;
-  background-color: rgb(10, 42, 139);
-}
-
-.bottom-nav__left {
-  display: flex;
-}
-
-.bottom-nav__right__items {
-  display: inline-block;
-  float: right;
 }
