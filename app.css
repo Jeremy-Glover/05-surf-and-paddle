@@ -37,7 +37,7 @@ header {
   background-size: cover;
   background-color: rgb(17, 89, 196);
   background-blend-mode: overlay;
-  margin: 0 10px 30px;
+  margin: 0 10px 20px;
   color: white;
 }
 
@@ -54,7 +54,6 @@ header {
   flex: 1;
   font-size: .7rem;
   font-weight: bold;
-
 }
 
 .fa-sun-o {
@@ -88,7 +87,6 @@ header {
   color: black;
   font-size: .8rem;
   font-weight: bold;
-  line-height: .5rem;
   margin-top: 0;
 }
 
@@ -96,64 +94,137 @@ header {
 
 .content {
   display: flex;
-  max-width: 100%;
+  max-width: 80%;
   margin: auto;
 }
 
 .main-head, .bottom-head {
   color: rgb(10, 42, 139);
-  font-size: 50px;
+  font-size: 3rem;;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 2;
+  margin-right: 2rem;
+}
+
+.main-author {
+  display: flex;
+  align-items: center;
+  line-height: 1rem;
+  color: rgb(54, 100, 240);
+  font-size: .8rem;
+}
+
+.main-headshot {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+ span {
+  color: rgb(155, 165, 171);
+  padding-left: 1rem;
+}
+
+.insert {
+  color: rgb(54, 100, 240);
+  font-size: 1.5rem;
+  border-left: 1px rgb(155, 165, 171) solid;
+  padding-left: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-size: .8rem;
+}
+
+.links-item-1, .links-item-2{
+  margin: 0 5px;
+}
+
+.links-item-1 {
+  background: rgb(155, 165, 171);
+  border: .5rem rgb(155, 165, 171) solid;
+}
+
+.links-item-2  {
+  background: rgb(54, 100, 240);
+  border: .5rem rgb(54, 100, 240) solid;
+}
+
+.fa-comment, .fa-cloud-download {
+  color: white;
+  background: rgb(155, 165, 171);
+  margin-right: .5rem;
+  font-size: 1rem;
+}
+
+.fa-share-square-o {
+  background: rgb(10, 42, 139);
+  margin-right: .5rem;
+  border: rgb(10, 42, 139) solid;
+  font-size: 1rem;
 }
 
 .sidebar {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  flex-shrink: 0;
-  width: 300px;
+  margin: 1rem;
+  align-items: center;
 }
 
-.button {
-  display: inline-block;
-  margin: 1rem;
+.sidebar-headshot {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 .bottom-head {
   align-self: center;
 }
 
-.image-guide__pics {
-  height: 260px;
-  width: 260px;
-}
-
+/*The footer styling for the page begins here */
 .image-guide {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 
+.image-guide__pics {
+  height: 270px;
+  width: 260px;
+}
+
 .image-guide__item {
+  display: flex;
   position: relative;
 }
 
 .image-guide__item__text {
   position: absolute;
-  bottom: 1%;
-  font-size: 1.5rem;
-  color: white;
-
+  left: 20px;
+  bottom: 0;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(10, 42, 139);
 }
 
 .bottom-nav {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   background-color: rgb(10, 42, 139);
   font-size: .5rem;
   color: white;
