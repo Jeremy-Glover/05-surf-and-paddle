@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
+    <header>
+      <ul class="nav-top">
+        <li class ="nav-logo"><i class="fa fa-sun-o"></i>SURF & PADDLE CO. BLOG</li>
+        <li class="nav__item"><a href="#">ABOUT</a><a href="#">SEARCH<i class="fa fa-search"></i></a></li>
+      </ul>
+    <h1 class="nav-top__head">SURF & PADDLE CO.</h1>
+    <p class="nav-top__subhead">An Ironyard Academy Project Est. Fall 2013</p>
+  </header>
     <main class="container">
-      <header>
-        <ul class="nav-top">
-          <li class ="nav-logo"><i class="fa fa-sun-o"></i>SURF & PADDLE CO. BLOG</li>
-          <li class="nav__item"><a href="#">ABOUT</a><a href="#">SEARCH<i class="fa fa-search"></i></a></li>
-        </ul>
-      <h1 class="nav-top__head">SURF & PADDLE CO.</h1>
-      <p class="nav-top__subhead">An Ironyard Academy Project Est. Fall 2013</p>
-    </header>
     <section class="content">
       <article class="main">
-        <h2 class="main-head">A Fantastic Engaging <br>Headline Goes Here</h2>
+        <h2 class="main-head">A Fantastic Engaging Headline Goes Here</h2>
         <div class="main-author">
-          <img class="main-headshot" src="headshot.jpg" alt=""><p>Anne Marie <span>on Monday Oct.7th 9:22pm</span></p>
+          <img class="main-headshot" src="headshot.jpg" alt=""><p>Anne Marie <span class="main-dateline">on Monday Oct.7th 9:22pm</span></p>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
@@ -31,39 +31,43 @@
           In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
           <div class="links">
-            <p class="links-item-1"><i class="fa fa-comment"></i>Read Comments</p>
-            <p class="links-item-1"><i class="fa fa-cloud-download"></i>Read Later</p>
-            <p class="links-item-2"><i class="fa fa-share-square-o"></i>Share This Post</p>
+            <a href="#" class="links-item-1"><i class="fa fa-comment"></i>Read Comments</a>
+            <a href="#" class="links-item-1"><i class="fa fa-cloud-download"></i>Read Later</a>
+            <a href="#" class="links-item-2"><i class="fa fa-share-square-o"></i>Share This Post</a>
           </div>
       </article>
       <aside class="sidebar">
+        <div class="sidebar-byline">
         <img class="sidebar-headshot" src="headshot.jpg" alt="">
-        <p>ANNE MARIE <span>Twitter  Facebook  Instagram</span></p>
+        <p class="sidebar-author">ANNE MARIE</p>
+        <span class=sidebar-social>Twitter Facebook Instagram</span>
+        </div>
         <img src="beach5.jpg" alt="paddleboard" class="sidebar-img">
-        <span class="sidebar__info__link">About This Ad</span>
-        <h4>Sidebar Section Heading</h4>
-        <p class="sidebar__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <span class="sidebar-link">About This Ad</span>
+        <h4 class="sidebar-head">Sidebar Section Heading</h4>
+        <p class="sidebar-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </aside>
     </section>
     <h2 class="bottom-head">MOST POPULAR POSTS</h2>
        <div class="image-guide">
-        <div class="image-guide__item">
+        <a href="#" class="image-guide__item">
           <img src="beach1.jpg" alt="post" class="image-guide__pics">
           <p class="image-guide__item__text">Another Cool Post</p>
-        </div>
-        <div class="image-guide__item" class=image-guide__pics>
+        </a>
+        <a href="#" class="image-guide__item" class=image-guide__pics>
           <img src="beach2.jpg" alt="post" class="image-guide__pics">
           <p class="image-guide__item__text">Post Title</p>
-        </div>
-        <div class="image-guide__item">
+        </a>
+        <a href="#" class="image-guide__item">
           <img src="beach3.jpg" alt="post" class="image-guide__pics">
           <p class="image-guide__item__text">Here's Another Longer Post Title</p>
-        </div>
-        <div class="image-guide__item">
+        </a>
+        <a href="#" class="image-guide__item">
           <img src="beach4.jpg" alt="post" class="image-guide__pics">
           <p class="image-guide__item__text">Oh Cool A Post!</p>
-        </div>
-        <div class="bottom-nav">
+        </a>
+      </div>
+      <div class="bottom-nav">
         <p class="bottom-nav__left"> <img src="ironyard.png" alt="Ironyard" class="bottom-logo">The Ironyard Copyright 2013. All Rights Reserved</p>
         <ul class="bottom-nav__right">
           <li class="bottom-nav__right__items" href="#">Nav Item 1 |</li>
@@ -72,7 +76,6 @@
           <li class="bottom-nav__right__items">Nav Item 4</li>
         </ul>
       </div>
-    </div>
   </main>
   </body>
 </html>

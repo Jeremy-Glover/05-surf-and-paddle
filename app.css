@@ -80,14 +80,16 @@ header {
 
 .nav-top__head {
   font-size: 75px;
-  line-height: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-top__subhead {
   color: black;
   font-size: .8rem;
   font-weight: bold;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*Main content of the page*/
@@ -103,6 +105,10 @@ header {
   font-size: 3rem;;
 }
 
+.main-head {
+  margin: 0;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -116,6 +122,8 @@ header {
   line-height: 1rem;
   color: rgb(54, 100, 240);
   font-size: .8rem;
+  margin: 0;
+  padding: 0;
 }
 
 .main-headshot {
@@ -125,9 +133,9 @@ header {
   margin-right: 1rem;
 }
 
- span {
+.main-dateline {
   color: rgb(155, 165, 171);
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
 .insert {
@@ -141,7 +149,6 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0;
-  font-size: .8rem;
 }
 
 .links-item-1, .links-item-2{
@@ -150,25 +157,23 @@ header {
 
 .links-item-1 {
   background: rgb(155, 165, 171);
-  border: .5rem rgb(155, 165, 171) solid;
+  color: white;
 }
 
 .links-item-2  {
   background: rgb(54, 100, 240);
-  border: .5rem rgb(54, 100, 240) solid;
+  color: white;
 }
 
 .fa-comment, .fa-cloud-download {
-  color: white;
-  background: rgb(155, 165, 171);
-  margin-right: .5rem;
+  background: rgb(97, 103, 107);
+  padding: .7rem;
   font-size: 1rem;
 }
 
 .fa-share-square-o {
   background: rgb(10, 42, 139);
-  margin-right: .5rem;
-  border: rgb(10, 42, 139) solid;
+  padding: .7rem;
   font-size: 1rem;
 }
 
@@ -180,13 +185,39 @@ header {
   align-items: center;
 }
 
+.sidebar-byline {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
 .sidebar-headshot {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   align-self: center;
-  margin-top: 2rem;
+  margin: 0;
 }
+
+.sidebar-author {
+  font-size: .7rem;
+  margin: 0;
+  color: rgb(54, 100, 240);
+}
+
+.sidebar-social .sidebar-info {
+  color: rgb(155, 165, 171);
+  font-size: .5rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-head {
+  color: rgb(54, 100, 240);
+  align-self: flex-start;
+}
+
+
 
 .bottom-head {
   align-self: center;
