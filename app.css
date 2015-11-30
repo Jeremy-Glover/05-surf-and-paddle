@@ -31,7 +31,7 @@ header {
   flex-direction: column;
   text-align: center;
   overflow: hidden;
-  height: 20rem;
+  height: 40vh;
   background: url("http://www.boem.gov/uploadedImages/BOEM/Environmental_Stewardship/NOP/CliffBEACH.jpg?n=1249")
     no-repeat center center;
   background-size: cover;
@@ -66,11 +66,13 @@ header {
   padding: 0 5px;
 }
 
-.nav__item {
+.nav-items {
   display: flex;
+  color: rgb(10, 42, 139);
+  text-decoration: none;
 }
 
-.nav__item a {
+.nav-items a {
   padding: 10px;
 }
 
@@ -79,7 +81,7 @@ header {
 }
 
 .nav-top__head {
-  font-size: 75px;
+  font-size: 4.5rem;
   margin: 0;
   padding: 0;
 }
@@ -181,7 +183,7 @@ header {
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 1rem;
+  margin: 0 2rem;
   align-items: center;
 }
 
@@ -206,18 +208,34 @@ header {
   color: rgb(54, 100, 240);
 }
 
-.sidebar-social .sidebar-info {
+.sidebar-social, .sidebar-info {
   color: rgb(155, 165, 171);
   font-size: .5rem;
   margin-bottom: 2rem;
 }
 
+.sidebar-img {
+  max-width: 90%;
+
+
+}
+.sidebar-link {
+  align-self: flex-end;
+  margin-right: .7rem;
+  text-decoration: underline;
+  color: rgb(155, 165, 171);
+  font-size: .5rem;
+}
+
 .sidebar-head {
   color: rgb(54, 100, 240);
   align-self: flex-start;
+  margin: 1rem 0 0 1rem;
 }
 
-
+.sidebar-info {
+  margin: 0 1rem;
+}
 
 .bottom-head {
   align-self: center;
@@ -231,17 +249,17 @@ header {
   width: 100%;
 }
 
-.image-guide__pics {
+/*.image-guide__pics {
   height: 270px;
-  width: 260px;
+  width: 260px;*/
 }
 
 .image-guide__item {
   display: flex;
-  position: relative;
+  /*position: relative;*/
 }
 
-.image-guide__item__text {
+/*.image-guide__item__text {
   position: absolute;
   left: 20px;
   bottom: 0;
@@ -249,6 +267,43 @@ header {
   font-size: 1.4rem;
   font-weight: bold;
   color: rgb(10, 42, 139);
+}*/
+
+.walden:before, .walden:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.walden {
+  position: relative; }
+
+.walden img {
+width: 100%;
+z-index: 1; }
+
+.walden:before {
+z-index: 2; }
+
+.walden:after {
+z-index: 3; }
+
+.walden {
+  -webkit-filter: brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6);
+  filter: brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6);
+}
+
+.walden::after {
+  background: #0044cc;
+  mix-blend-mode: screen;
+  opacity: .3; }
+
+.walden:hover {
+  background: none;
 }
 
 .bottom-nav {
